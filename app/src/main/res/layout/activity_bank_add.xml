@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.ortho.BankAddActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_account_balance_black_24dp"
+        android:id="@+id/bankImage"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Add Bank Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/bankImage"
+        android:id="@+id/bankAddHeader"
+        android:layout_marginBottom="30dp"
+        />
+
+
+    <EditText
+        android:layout_below="@+id/bankAddHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bank_name_edittext_id"
+        android:hint="Enter your bank name"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bank_account_number_edittext_id"
+        android:hint="Enter your account number"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/bank_name_edittext_id"
+        />
+
+    <Spinner
+        android:id="@+id/bank_account_type_spinner_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bank_account_number_edittext_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bank_account_type_spinner_id"
+        android:hint="Enter your starting balance"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:id="@+id/bank_initial_balance_editText_id"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bank_initial_balance_editText_id"
+        android:hint="Enter your loan  amount(if any)"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:id="@+id/bank_loan_amount_edittext_id"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/bank_loan_amount_edittext_id"
+        android:id="@+id/bank_add_dialog_first_lin">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.75"
+            android:hint="select loan due date"
+            android:inputType="date"
+            android:id="@+id/bank_loan_due_edittext_id"
+            android:textAlignment="center"
+
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:src="@drawable/ic_today_black_24dp"
+            android:id="@+id/loan_due_date_picker_button"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bank_add_dialog_first_lin"
+        android:text="Save Bank"
+        android:textColor="@color/light_gray"
+        android:id="@+id/save_bank_button"
+        android:background="@drawable/button"
+
+        />
+
+
+
+</RelativeLayout>

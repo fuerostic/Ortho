@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_field"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:hint="Spent Amount"
+        android:textAlignment="center"
+        android:inputType="numberDecimal|number"
+        android:id="@+id/tour_add_spend_edittext"
+        android:layout_marginBottom="30dp"
+        />
+
+</LinearLayout>

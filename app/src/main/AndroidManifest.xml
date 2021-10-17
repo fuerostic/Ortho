@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ortho"
+    android:installLocation="preferExternal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ortho_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ortho_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutThisAppActivity"></activity>
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".AddWishActivity" />
+        <activity android:name=".AddTourActivity" />
+        <activity android:name=".DebtLlistActivity" />
+        <activity android:name=".AddDebtsActivity" />
+        <activity android:name=".BankListActivity" />
+        <activity android:name=".BankAddActivity" />
+        <activity android:name=".TransactionListActivity" />
+        <activity android:name=".AddExpenseActivity" />
+        <activity android:name=".AddBalanceActivity" />
+        <activity
+            android:name=".HomeFragmentActivity"
+            android:label="@string/title_activity_home_fragment"
+            android:parentActivityName=".MainScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ortho.MainScreenActivity" />
+        </activity>
+        <activity android:name=".MainScreenActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

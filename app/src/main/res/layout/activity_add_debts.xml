@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ortho.AddDebtsActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:weightSum="8"
+        android:id="@+id/header_add_debt"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:id="@+id/back_button_add_debt"
+                android:src="@drawable/ic_chevron_left_blue_24dp"
+                android:backgroundTint="@android:color/transparent"
+                />
+
+
+
+        </LinearLayout>
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:elevation="7dp"
+            app:shape_roundRect_bottomLeftRadius="40dp"
+            app:shape_roundRect_topLeftRadius="10dp"
+
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/debt_image2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/fredoka_regular"
+                    android:gravity="center"
+                    android:text="Add Debt"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <!-- YOUR CONTENT -->
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+    </LinearLayout>
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_add_debt"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/debt_add_type_spinner"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:background="@drawable/add_debt_input_field"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/debt_add_type_spinner"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/debt_add_person_edittext"
+        android:hint="Partner name"
+        android:textAlignment="center"
+        android:inputType="text"
+        />
+    <EditText
+        android:background="@drawable/add_debt_input_field"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/debt_add_person_edittext"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/debt_add_amount_edittext"
+        android:hint="Amount"
+        android:textAlignment="center"
+        android:inputType="numberDecimal|number"
+
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/debt_add_amount_edittext"
+        android:id="@+id/debt_add_dialog_first_lin">
+
+        <EditText
+            android:id="@+id/debt_add_issue_date_edittext_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1.75"
+            android:background="@drawable/add_debt_input_field"
+            android:hint="Select issue date"
+            android:inputType="date"
+            android:textAlignment="center"
+
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:backgroundTint="@color/belize_hole"
+            android:src="@drawable/ic_today_black_24dp"
+            android:id="@+id/debt_issue_date_picker_button"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/debt_add_dialog_first_lin"
+        android:id="@+id/debt_add_dialog_second_lin">
+
+        <EditText
+            android:id="@+id/debt_add_due_date_edittext_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:background="@drawable/add_debt_input_field"
+            android:hint="Select due date"
+            android:inputType="date"
+            android:textAlignment="center"
+
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:backgroundTint="@color/belize_hole"
+            android:src="@drawable/ic_today_black_24dp"
+            android:id="@+id/debt_due_date_picker_button"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/debt_add_dialog_second_lin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/button"
+        android:id="@+id/debt_add_save_button"
+        android:gravity="center"
+        android:backgroundTint="@color/belize_hole"
+        android:textColor="@color/white"
+        android:text="save" />
+
+
+</RelativeLayout>

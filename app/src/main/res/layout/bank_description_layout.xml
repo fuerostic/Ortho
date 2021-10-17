@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="30dp"
+    android:outlineAmbientShadowColor="@color/dark_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:weightSum="3"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_account_balance_black_24dp"
+                android:id="@+id/banck_info_image"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Janata Bank"
+                android:textStyle="bold"
+                android:id="@+id/bank_info_name_textview"
+                android:textAlignment="center"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:weightSum="6"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".95"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                >
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.5"
+                    android:textAlignment="textStart"
+                    android:textStyle="normal"
+                    android:id="@+id/bank_account_type_textview"
+                    android:text="Account Type: Savings"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="10sp"
+                    />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".5"
+                    android:id="@+id/bank_account_delete_button"
+                    android:src="@drawable/ic_delete_black_24dp"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".95"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:textStyle="normal"
+                android:id="@+id/bank_account_balance_textview"
+                android:text="Account balanace: 10000 taka"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".95"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:textStyle="normal"
+                android:id="@+id/bank_account_number_textview"
+                android:text="Account Number: 1000032548"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".95"
+                android:textAlignment="textStart"
+                android:textStyle="normal"
+                android:padding="10dp"
+                android:id="@+id/bank_loan_amount_textview"
+                android:text="Loan: 100 taka"
+                android:textSize="10sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".95"
+                android:textAlignment="textStart"
+                android:textStyle="normal"
+                android:padding="10dp"
+                android:id="@+id/bank_loan_due_date"
+                android:text="11 /06 /2020"
+                android:textSize="10sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Deposit"
+                    android:id="@+id/bank_deposit_button"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="10sp"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:id="@+id/bank_withdraw_button"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:text="Withdraw"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="10sp"
+                    android:id="@+id/bank_loan_setter_button"
+                    android:text="Edit loan"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

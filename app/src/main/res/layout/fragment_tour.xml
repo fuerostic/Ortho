@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ProgressBar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:id="@+id/tour_loading_progressbar"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tour_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@color/pumpkin"
+        android:textColor="@color/white"
+        android:text="Tour budget Plans"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tour_header"
+        android:text="No tour Plan yet"
+        android:textAlignment="center"
+        android:id="@+id/no_tour_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/no_tour_text"
+        android:src="@drawable/cat_sleep_gif"
+        android:id="@+id/no_tour_image"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+        <ListView
+            android:layout_below="@+id/tour_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tour_list_id"
+            android:dividerHeight="5dp"
+            >
+
+
+        </ListView>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tour_floating_action_menu"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:menu_showShadow="true"
+        app:menu_colorNormal="@color/colorPrimary"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_labels_textColor="@color/light_yellow"
+
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Add Tour"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/colorPrimary"
+            android:id="@+id/add_tour_button"
+            android:src="@drawable/ic_add_black_24dp"
+
+            />
+
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+</RelativeLayout>

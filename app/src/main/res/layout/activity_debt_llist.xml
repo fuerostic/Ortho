@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.ortho.DebtLlistActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAllCaps="true"
+        android:text="Debt history"
+        android:id="@+id/debt_list_header"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/midnight_blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Debts Yet"
+        android:layout_below="@+id/debt_list_header"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAlignment="center"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/no_debts_id"
+        android:visibility="gone"
+
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_below="@+id/no_debts_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dollar_glass_gif"
+        android:id="@+id/no_debts_image"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/debts_loading_progressbar"
+            android:indeterminate="true"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/debtListviewId"
+        android:dividerHeight="10dp"
+        android:layout_below="@+id/debt_list_header"
+        >
+
+
+
+
+    </ListView>
+
+</RelativeLayout>

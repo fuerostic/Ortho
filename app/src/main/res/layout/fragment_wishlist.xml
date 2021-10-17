@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wish_relative_layout_id"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:id="@+id/wish_loading_progressBar"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wish_fragment_cardview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAlignment="center"
+        android:text="No wish Yet."
+        android:id="@+id/no_wish_text"
+        android:visibility="gone"
+
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/no_wish_text"
+        android:id="@+id/no_wish_image"
+        android:src="@drawable/empty_box_gif2"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/peter_river"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Wish List"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:id="@+id/wish_fragment_header"
+        android:layout_marginBottom="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wish_fragment_header"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/wish_fragment_cardview"
+        app:cardCornerRadius="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total wish: "
+                android:textAlignment="center"
+                android:textColor="@color/emerald"
+
+                android:id="@+id/wish_fragment_total_wish"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textAlignment="center"
+
+                android:textColor="@color/emerald"
+                android:id="@+id/wish_fragment_wish_achieved_textview"
+                android:text="Wish acchieved:"
+
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ExpandableListView
+        android:layout_below="@+id/wish_fragment_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:id="@+id/wish_fragment_expandable_listView"
+        >
+
+
+    </ExpandableListView>
+
+
+
+
+
+
+        <com.github.clans.fab.FloatingActionButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:fab_label="Add New Wish"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:menu_backgroundColor="@android:color/transparent"
+            app:fabSize="mini"
+            android:id="@+id/floating_add_wish_plan"
+            android:src="@drawable/ic_add_black_24dp"
+
+            />
+
+
+
+
+</RelativeLayout>

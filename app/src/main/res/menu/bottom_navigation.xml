@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_calender"
+        android:title="@string/title_calender"
+        android:icon="@drawable/ic_today_black_24dp"
+        />
+    <item
+        android:id="@+id/navigation_wishList"
+        android:title="@string/title_wishList"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        />
+    <item
+        android:id="@+id/navigation_home"
+        android:title="@string/title_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item
+        android:id="@+id/navigation_tourPlan"
+        android:title="@string/title_tour"
+        android:icon="@drawable/ic_flight_takeoff_black_24dp"
+        />
+    <item
+        android:id="@+id/navigation_analytics"
+        android:title="@string/title_analytics"
+        android:icon="@drawable/ic_insert_chart_black_24dp"
+        />
+
+</menu>

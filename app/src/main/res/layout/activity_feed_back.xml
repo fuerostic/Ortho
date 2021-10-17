@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ortho.FeedBackActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.github.florent37.shapeofview.shapes.CutCornerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shape_cutCorner_bottomLeftSize="18dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/emerald"
+            android:text="Feedback"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+
+            />
+
+    </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_field"
+        android:hint="Your Name"
+        android:id="@+id/feedback_name_edittext"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_field"
+        android:hint="Feedback"
+        android:id="@+id/feedback_feedback_edittext"
+        />
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="Send Feedback"
+        android:id="@+id/send_feedback_button"
+        />
+
+
+
+
+</LinearLayout>

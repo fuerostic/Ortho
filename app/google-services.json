@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "333203623438",
+    "firebase_url": "https://ortho-928cc.firebaseio.com",
+    "project_id": "ortho-928cc",
+    "storage_bucket": "ortho-928cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333203623438:android:4823b5f0d86c76f525365f",
+        "android_client_info": {
+          "package_name": "com.example.logindemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333203623438-9dlmdb0kpn47gf8odfo3ilak2dloanrr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.logindemo",
+            "certificate_hash": "69a01b5e00e319ba0fb326a569a7c781c7376a50"
+          }
+        },
+        {
+          "client_id": "333203623438-00rai0c6cfohtn5kil966k8frplfo4u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVdh_q8ztDasnY3l-P6j0z5u0AvN0AXsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333203623438-00rai0c6cfohtn5kil966k8frplfo4u5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

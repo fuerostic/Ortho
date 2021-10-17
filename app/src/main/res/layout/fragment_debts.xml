@@ -1,0 +1,300 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ortho.DebtsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/debts_image_id"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/debt_image"
+
+            />
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_below="@+id/debts_image_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/debtsFragmentCardView"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp"
+            android:background="@color/light_gray"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_bank_one"
+                android:padding="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="Debts summary"
+                    android:textAllCaps="true"
+                    android:id="@+id/bank_info_header"
+                    android:textAlignment="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:weightSum="4"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:text="Total debts given: "
+                            android:textAlignment="textStart"
+                            android:id="@+id/total_debts_given_textview"
+                            android:textColor="#2259FF"
+                            android:layout_marginBottom="5dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:text="Total debts taken: "
+                            android:textAlignment="textStart"
+                            android:id="@+id/total_debts_taken_textview"
+                            android:textColor="#2259FF"
+                            android:layout_marginBottom="5dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:text="Debts payable: "
+                            android:id="@+id/total_debts_payable_textview"
+                            android:textAlignment="textStart"
+                            android:textColor="#2259FF"
+                            android:layout_marginBottom="5dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:text="Debts receivable: "
+                            android:id="@+id/total_debts_receivable_textview"
+                            android:textAlignment="textStart"
+                            android:textColor="#2259FF"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:weightSum="4"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:text="0.0"
+                            android:id="@+id/total_debts_given_amount_textview"
+                            android:textAlignment="textEnd"
+                            android:textColor="#009688"
+                            android:layout_marginBottom="5dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:text="0.0"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/total_debts_taken_amount_textview"
+                            android:textColor="#009688"
+                            android:layout_marginBottom="5dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:text="0.0"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/total_debts_payable_amount_textview"
+                            android:textColor="#009688"
+                            android:layout_marginBottom="5dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:text="0.0"
+                            android:id="@+id/total_debts_receivable_amount_textview"
+                            android:textAlignment="textEnd"
+                            android:textColor="#009688"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/debts_cardview"
+            android:indeterminate="true"
+            android:id="@+id/recent_debt_loading_progressbar"
+            android:visibility="gone"
+            />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/debts_cardview"
+            android:layout_below="@+id/debtsFragmentCardView"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp"
+            android:background="@color/light_gray"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="Debts History"
+                    android:id="@+id/debts_history_header"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/debts_history_header"
+                    android:text="No Debts Yet"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/no_recent_debt_text"
+                    android:visibility="gone"
+                    />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:id="@+id/debts_history_recent"
+                    android:layout_below="@+id/debts_history_header"
+                    android:dividerHeight="5dp"
+
+                    >
+
+
+
+                </ListView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="See full history"
+                    android:layout_below="@+id/debts_history_recent"
+                    android:padding="10dp"
+                    android:id="@+id/all_transaction_viewer_button"
+                    android:layout_marginRight="15dp"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</ScrollView>

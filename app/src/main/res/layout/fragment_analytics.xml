@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coordinator_analytics"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/emerald"
+            android:text="Analytics"
+            android:id="@+id/analytics_header_text"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/analytics_header_text"
+            android:id="@+id/dailyBalanceCardViewId"
+            >
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:id="@+id/montly_linechart_id"
+                android:layout_margin="10dp"
+                >
+
+
+            </com.github.mikephil.charting.charts.LineChart>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="30dp"
+            android:padding="5dp"
+            android:id="@+id/expense_bar_cardview_id"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/dailyBalanceCardViewId"
+            >
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:id="@+id/expense_bar_chart_id"
+                android:layout_margin="10dp"
+                >
+
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/saving_bar_cardview_id"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="30dp"
+        android:padding="5dp"
+        android:layout_below="@+id/expense_bar_cardview_id"
+        >
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/savings_bar_chart_id"
+            android:layout_margin="10dp"
+            >
+
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/piechart_cardview"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="30dp"
+        android:padding="5dp"
+        android:layout_below="@+id/saving_bar_cardview_id"
+        >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/expense_pie_chart_id"
+            android:layout_margin="10dp"
+            >
+
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

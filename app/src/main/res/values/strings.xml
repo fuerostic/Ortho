@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">Ortho</string>
+    <string name="new_user">New to this app?</string>
+    <string name="existing_user">Already have an account?</string>
+    <string name="welcome">Welcome!</string>
+    <string name="welcome_header">Your journey starts here!</string>
+    <string name="login_header">Hello there!</string>
+    <string name="register_header">It all starts here!</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="need_help">Need help?</string>
+
+    <string name="asking_email">Enter your email address</string>
+    <string name="asking_login_password">Password</string>
+    <string name="backbutton_description">back button</string>
+    <string name="new_password">Enter a new Password</string>
+    <string name="confirm_password">Confirm your Password</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_dailyExpese">Expense</string>
+    <string name="title_calender">Calender</string>
+    <string name="title_wishList">Wish List</string>
+    <string name="title_tour">Tour plan</string>
+    <string name="title_analytics">Analytics</string>
+
+    <string name="title_account">Account</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_about_us">About us</string>
+    <string name="title_feedback">Feedback</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bank</string>
+    <string name="title_activity_home_fragment">HomeFragmentActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+    <string-array name="category">
+
+        <item>Food</item>
+        <item>Rent</item>
+        <item>Transportation</item>
+        <item>Clothing</item>
+        <item>Communication</item>
+        <item>Books</item>
+        <item>Electronics</item>
+        <item>Project</item>
+        <item>Treat</item>
+        <item>Tuition</item>
+        <item>Education</item>
+        <item>Hangout</item>
+        <item>Trip</item>
+        <item>Utilities</item>
+        <item>Services</item>
+        <item>Fees</item>
+        <item>Tax</item>
+
+    </string-array>
+
+    <string-array name="deposits">
+
+
+        <item>Tuition</item>
+        <item>Business</item>
+        <item>Sales</item>
+        <item>Paycheck</item>
+        <item>Wage</item>
+        <item>Scholarship</item>
+        <item>Grant</item>
+        <item>Services</item>
+        <item>Prize</item>
+    </string-array>
+
+    <string-array name="transaction_header">
+
+        <item>Expenses</item>
+        <item>Deposits</item>
+
+
+    </string-array>
+
+    <string-array name="accountTypes">
+
+        <item>Savings deposit</item>
+        <item>Current deposit</item>
+        <item>Fixed deposit</item>
+        <item>Recurring deposit</item>
+    </string-array>
+
+    <string-array name="debtType">
+
+        <item>Given</item>
+        <item>Taken</item>
+    </string-array>
+
+    <string-array name="wishType">
+
+        <item>Vehicle</item>
+        <item>House</item>
+        <item>Property</item>
+        <item>Computer</item>
+        <item>Communication</item>
+        <item>Food</item>
+        <item>Trip</item>
+        <item>Gift</item>
+        <item>Book</item>
+        <item>Health Item</item>
+        <item>Utility</item>
+        <item>Tool</item>
+        <item>Electronics</item>
+        <item>Gadget</item>
+        <item>Dress</item>
+        <item>Asset</item>
+        <item>Equipment</item>
+        <item>Musical Instrument</item>
+        <item>Entertainment</item>
+        <item>Repair or Restore</item>
+        <item>Education</item>
+        <item>Event</item>
+        <item>Sports</item>
+
+
+    </string-array>
+
+    <string name="about_this_app">
+        If you are someone who wants to keep track of your financial activities and keep less worried, this app is made for you.
+        Ortho is an app basically designed to track expenses and earnings of our day today life.\n\n
+        The complexity of our life is increasing day by day. As our life is beginning to become more
+        complex, it is getting hard to track our expenses , debts and other crucial financial information.
+        Ortho app allows user to keep track of user\'s financial needs. It is equipped with necessary charts
+        and graphs for better visual understanding. \n\nHope you will enjoy this app and keep it as your companion
+        to track your financial activities.
+
+    </string>
+
+    <string name="about_me">
+        Hi, I am Mohtasim Fuad, currently a student of Computer Science And Engineering department on Khulna University of Engineering &amp; Technology,Khulna,Bangladesh.
+        \n\nI am very glad that you are checking this app. It is currently in beta version so in future updates i will try to resolve all the bugs.
+        If you have any suggestion or opinion, feel free to give a feedback. \n\nWish you a happy and wealthy life.
+    </string>
+
+</resources>

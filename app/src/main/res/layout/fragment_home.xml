@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coordinator_homeFragment"
+
+
+        >
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeAppbarLayout"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/transparent"
+
+                >
+
+
+
+                <com.google.android.material.tabs.TabLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/tab_layout_background"
+                    app:tabMode="fixed"
+                    app:tabBackground="@drawable/tab_layout_selector"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabPaddingStart="16dp"
+                    app:tabPaddingEnd="16dp"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabRippleColor="@null"
+                    app:tabTextAppearance="@style/TabTextAppearance"
+                    android:id="@+id/homeFragmentTablayout"
+                    android:minHeight="?android:attr/actionBarSize"
+                    app:tabGravity="fill"
+
+
+                    />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_below="@+id/homeAppbarLayout"
+            android:id="@+id/homeFragmentViewPagerId"
+            android:layout_width="match_parent"
+
+            android:layout_height="fill_parent"/>
+
+
+
+    </RelativeLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_floating_action_menu"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:menu_showShadow="true"
+        app:menu_fab_label=""
+        app:menu_colorNormal="@color/colorPrimary"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_labels_textColor="@color/light_yellow"
+
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Add debt"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/colorPrimary"
+            android:id="@+id/floating_debts"
+            android:src="@drawable/ic_indeterminate_check_box_black_24dp"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Add balance"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/colorPrimary"
+            android:id="@+id/floating_add_balance"
+            android:src="@drawable/ic_add_box_black_24dp"
+
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Add expense"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/colorPrimary"
+            android:id="@+id/floating_add_expense"
+            android:src="@drawable/ic_indeterminate_check_box_black_24dp"
+
+            />
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ortho.AddWishActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:id="@+id/back_button_add_wish"
+                android:src="@drawable/ic_chevron_left_brown_24dp"
+                android:backgroundTint="@android:color/transparent"
+                />
+
+
+
+        </LinearLayout>
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:elevation="7dp"
+            app:shape_roundRect_bottomLeftRadius="40dp"
+            app:shape_roundRect_topLeftRadius="10dp"
+
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:backgroundTint="@color/brown"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wish_image2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/fredoka_regular"
+                    android:gravity="center"
+                    android:text="Add Wish"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                   />
+
+
+            </RelativeLayout>
+
+
+            <!-- YOUR CONTENT -->
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Spinner
+        android:id="@+id/add_wish_wish_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:entries="@array/wishType"
+        android:spinnerMode="dialog"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/wish_input_field"
+        android:hint="Wish Name"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:id="@+id/add_wish_wish_name_editText"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/wish_input_field"
+        android:hint="Wish Value"
+        android:textAlignment="center"
+        android:inputType="numberDecimal|number"
+        android:layout_marginRight="10dp"
+        android:id="@+id/add_wish_wish_value_editText"
+        android:layout_marginBottom="20dp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_today_black_24dp"
+            android:text="Set"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/brown"
+            android:id="@+id/add_wish_wish_date_select_button"
+
+
+            />
+
+        <TextView
+            android:id="@+id/add_wish_date_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Set wish date"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="20sp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/brown"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:id="@+id/add_wish_save_button"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

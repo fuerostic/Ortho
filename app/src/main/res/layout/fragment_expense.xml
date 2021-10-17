@@ -1,0 +1,344 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.ortho.ExpenseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/HomeExpense"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expense_progress_cardview"
+            app:cardCornerRadius="30dp"
+            android:elevation="10dp"
+            android:layout_margin="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/expense_progress_layout"
+                >
+
+                <ProgressBar
+
+                    android:id="@+id/expense_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:layout_centerInParent="true"
+                    android:progressDrawable="@drawable/circular"
+                    android:secondaryProgress="100"
+                    />
+
+                <TextView
+                    android:id="@+id/expense_progress_text"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:gravity="center"
+                    android:text="Balance:\n0.0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/expense_progress_cardview"
+            android:id="@+id/ExpenseFragmentCardView"
+
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp"
+            android:background="@color/light_gray"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_bank_one"
+                android:padding="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="Monthly summary"
+                    android:textAllCaps="true"
+                    android:id="@+id/bank_info_header"
+                    android:textAlignment="center"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.25"
+                            android:weightSum="4"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:text="Deposited this month: "
+                                android:textAlignment="textStart"
+                                android:id="@+id/deposited_this_month_text"
+                                android:textColor="#2259FF"
+                                android:layout_marginBottom="5dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:text="Spent this month: "
+                                android:textAlignment="textStart"
+                                android:id="@+id/spent_this_month_text"
+                                android:textColor="#2259FF"
+                                android:layout_marginBottom="5dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:text="Deposited Today: "
+                                android:id="@+id/deposited_today_text"
+                                android:textAlignment="textStart"
+                                android:textColor="#2259FF"
+                                android:layout_marginBottom="5dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:text="Spent Today:"
+                                android:id="@+id/spent_today_text"
+                                android:textAlignment="textStart"
+                                android:textColor="#2259FF"
+
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".75"
+                            android:weightSum="4"
+                            android:orientation="vertical"
+                            android:layout_marginRight="10dp"
+
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:text="0.0 "
+                                android:id="@+id/deposited_this_month_amount_textview"
+                                android:textAlignment="textEnd"
+                                android:textColor="#009688"
+                                android:layout_marginBottom="5dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:text="0.0 "
+                                android:textAlignment="textEnd"
+                                android:id="@+id/spent_this_month_amount_textview"
+                                android:textColor="#009688"
+                                android:layout_marginBottom="5dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:text="0.0 "
+                                android:textAlignment="textEnd"
+                                android:id="@+id/deposited_today_amount_textview"
+                                android:textColor="#009688"
+                                android:layout_marginBottom="5dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:text="0.0 "
+                                android:id="@+id/spent_today_amount_textview"
+                                android:textAlignment="textEnd"
+                                android:textColor="#009688"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_cardview"
+            android:layout_below="@+id/ExpenseFragmentCardView"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp"
+            android:background="@color/light_gray"
+
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="Recent Transactions"
+                    android:id="@+id/recent_transaction_header"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recent_transaction_header"
+                    android:text="No Transactions Yet"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:id="@+id/no_recent_transaction_text"
+                    />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:id="@+id/transactionList"
+                    android:layout_below="@+id/recent_transaction_header"
+                    android:dividerHeight="5dp"
+
+
+                    >
+
+
+
+                </ListView>
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="See all transactions"
+                    android:layout_below="@+id/transactionList"
+                    android:padding="10dp"
+                    android:id="@+id/all_transaction_viewer_button"
+                    android:layout_marginRight="15dp"
+
+
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+            <ProgressBar
+                android:layout_below="@+id/transaction_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/recent_transaction_loading_proressBar"
+                android:visibility="gone"
+                android:indeterminate="true"
+
+                />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

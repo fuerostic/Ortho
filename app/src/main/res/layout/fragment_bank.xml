@@ -1,0 +1,222 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ortho.BankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/bank_imageview"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/vault2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_layout_bank_one"
+            android:padding="20dp"
+            android:layout_below="@+id/bank_imageview"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="Bank Information"
+                android:textAllCaps="true"
+                android:id="@+id/bank_info_header"
+                android:textAlignment="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:weightSum="4"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:text="Total bank balance: "
+                        android:textAlignment="textStart"
+                        android:id="@+id/total_bank_balance_textview"
+                        android:textColor="#2259FF"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:text="Total Bank Loan: "
+                        android:textAlignment="textStart"
+                        android:id="@+id/total_bank_loan_text_view"
+                        android:textColor="#2259FF"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:text="Total Deposited this month: "
+                        android:id="@+id/total_bank_deposit_textview"
+                        android:textAlignment="textStart"
+                        android:textColor="#2259FF"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:text="Total Winthdrawn this month "
+                        android:id="@+id/total_bank_withdrawn_textview"
+                        android:textAlignment="textStart"
+                        android:textColor="#2259FF"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:weightSum="4"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:text="0.0"
+                        android:id="@+id/total_bank_balance_amount_textview"
+                        android:textAlignment="textEnd"
+                        android:textColor="#009688"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:text="0.0"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/total_bank_loan_amount_textview"
+                        android:textColor="#009688"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:text="0.0"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/total_bank_deposit_amount_textview"
+                        android:textColor="#009688"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:text="0.0"
+                        android:id="@+id/total_bank_withdrawn_amount_textview"
+                        android:textAlignment="textEnd"
+                        android:textColor="#009688"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:text="Add Bank Account"
+            android:layout_below="@+id/linear_layout_bank_one"
+            android:id="@+id/bank_add_bank_button"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Bank Accounts"
+            android:layout_below="@+id/bank_add_bank_button"
+            android:id="@+id/bank_list_shower_button"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

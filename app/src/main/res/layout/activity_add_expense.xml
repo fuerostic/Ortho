@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ortho.AddExpenseActivity">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:weightSum="8"
+    android:id="@+id/header_add_expense"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:id="@+id/back_button_add_expense"
+            android:src="@drawable/ic_chevron_left_brown_24dp"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+
+
+    </LinearLayout>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="match_parent"
+        android:elevation="7dp"
+        app:shape_roundRect_bottomLeftRadius="40dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/expense_image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:gravity="center"
+                android:text="Add Expense"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <!-- YOUR CONTENT -->
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/header_add_expense"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/add_expense_dialog_first_lin">
+
+        <EditText
+            android:id="@+id/add_expense_date_edittext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:background="@drawable/add_expense_input_field"
+            android:hint="Select date"
+            android:inputType="date"
+            android:textAlignment="center"
+
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:backgroundTint="@color/dark_yellow"
+            android:src="@drawable/ic_today_black_24dp"
+            android:id="@+id/add_expense_date_pick_button"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/add_expense_dialog_first_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/add_expense_dialog_second_lin"
+        >
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="30dp"
+            android:hint="Select Category"
+            android:textAlignment="center"
+            android:background="@drawable/add_expense_input_field"
+            android:id="@+id/add_expense_category_edittext"
+            />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:id="@+id/add_expense_category_spinner"
+            >
+
+
+        </Spinner>
+
+
+
+    </LinearLayout>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/add_expense_dialog_second_lin"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal|numberSigned"
+        android:textAlignment="center"
+        android:background="@drawable/add_expense_input_field"
+        android:id="@+id/add_expense_amount_edittext"
+        />
+
+    <Button
+        android:id="@+id/add_expense_savebutton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_expense_amount_edittext"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/button"
+        android:text="Save"
+        android:backgroundTint="@color/dark_yellow"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
