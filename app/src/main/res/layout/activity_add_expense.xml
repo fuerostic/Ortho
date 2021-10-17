@@ -34,15 +34,7 @@
 
     </LinearLayout>
 
-    <com.github.florent37.shapeofview.shapes.RoundRectView
-        android:layout_width="0dp"
-        android:layout_weight="7"
-        android:layout_height="match_parent"
-        android:elevation="7dp"
-        app:shape_roundRect_bottomLeftRadius="40dp"
-        app:shape_roundRect_topLeftRadius="10dp"
 
-        >
 
 
 
@@ -79,8 +71,6 @@
 
 
         <!-- YOUR CONTENT -->
-
-    </com.github.florent37.shapeofview.shapes.RoundRectView>
 
 
 

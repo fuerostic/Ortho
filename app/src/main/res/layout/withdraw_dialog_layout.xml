@@ -7,14 +7,15 @@
 
 
     <EditText
+        android:id="@+id/withdraw_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/light_gray"
         android:hint="Enter withdraw amount"
-        android:id="@+id/withdraw_edittext"
         android:inputType="numberDecimal|number"
-        android:textAlignment="center"
+        android:minHeight="48dp"
 
-        />
+        android:textAlignment="center"
+        android:autofillHints="" />
 
 </LinearLayout>

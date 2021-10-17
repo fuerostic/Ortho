@@ -15,6 +15,42 @@
         <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_change_password.xml" value="0.21875" />
         <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_debt_llist.xml" value="0.21875" />
         <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_feed_back.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_login.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_main.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_main_screen.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_sign_up.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_splash_screen.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/activity_transaction_list.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/add_savings_wish_dialog.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/addbalance_spinner.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/bank_description_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/calender_list_item_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/debt_edit_dialog.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/debts_history_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/deposit_dialog_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/edit_wish_dialog_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/expenselist_child.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/expenselist_parent.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/forget_password_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/fragment_analytics.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/fragment_bank.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/fragment_calender.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/fragment_debts.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/fragment_expense.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/fragment_home.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/fragment_tour.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/fragment_wishlist.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/header.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/loan_setter_dialog.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/recent_debt_history_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/recent_transaction.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/tour_add_spend_dialog_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/tour_edit_dialog_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/tour_list_item_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/tour_list_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/wish_item_layout_body_layout.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/wishlist_item_layout_header.xml" value="0.21875" />
+        <entry key="..\:/laptop survivor files/AndroidStudioProjects/LoginDemo/app/src/main/res/layout/withdraw_dialog_layout.xml" value="0.21875" />
       </map>
     </option>
   </component>
