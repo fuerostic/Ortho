@@ -1,4 +1,8 @@
-# Ortho
+![forks](https://img.shields.io/github/forks/{username}/{repo-name}.svg)
+![stars](https://img.shields.io/github/stars/{username}/{repo-name}.svg)
+![watchers](https://img.shields.io/github/watchers/{username}/{repo-name}.svg)
+
+# Ortho ![License](https://img.shields.io/github/license/{username}/{repo-name}.svg)
 A money management android application.
 
 ## Updates
@@ -6,10 +10,10 @@ A money management android application.
 * Layout update
 
 ## Platform
-Android (SDK support 30)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) (SDK support 30)
 
 ## Language
-Java
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 ## Description
 *Ortho* is a money management android application which enables user to keep track of expenses and savings in day today life. The application supports various monetary activity tracking such as daily income and expenses, bank balance tracking , debt reminder, monthly budget, tour budget, wishlist item budget etc. The application contains in-build calender visualizing day-today transaction. The application also allows explicit transaction tracking with editing support. The application also contains graphical analytics for providing better visual tracking experience. 
