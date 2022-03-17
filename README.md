@@ -1,8 +1,8 @@
-![forks](https://img.shields.io/github/forks/{username}/{repo-name}.svg)
-![stars](https://img.shields.io/github/stars/{username}/{repo-name}.svg)
-![watchers](https://img.shields.io/github/watchers/{username}/{repo-name}.svg)
+![forks](https://img.shields.io/github/forks/fuerostic/Ortho.svg)
+![stars](https://img.shields.io/github/stars/fuerostic/Ortho.svg)
+![watchers](https://img.shields.io/github/watchers/fuerostic/Ortho.svg)
 
-# Ortho ![License](https://img.shields.io/github/license/{username}/{repo-name}.svg)
+# Ortho ![License](https://img.shields.io/github/license/fuerostic/Ortho.svg)
 A money management android application.
 
 ## Updates
